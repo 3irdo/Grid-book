@@ -28,6 +28,7 @@ body {
     "card-2"
     "card-3";
     height: 100vh;
+    gap: 5px;
   }
 
 .item1 {
@@ -61,12 +62,12 @@ body {
 }
 
 .item3 {
+    display: grid;
     background-color: var(--red);
     background-image: url(/assets/img/Logo_anagrama.png);
-    background-size: 10%;
+    background-size:10%;
     background-repeat: no-repeat;
     background-position:top;
-    display: grid;
     grid-area: card-3;
     grid-column: 2 / -2;
     grid-row: 5  / 7; 
@@ -92,4 +93,35 @@ body {
     justify-self:center;
     align-items: flex-end;
     
+}
+
+.item4 {
+
+    background-image: url(/assets/img/grulla.jpg);
+   background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    grid-column: 4 / 7;
+    grid-row: 2 / 3;
+    background-color: white;
+    border: solid 2px black;
+}
+
+.item5 {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    max-width: 19px;
+}
+
+.item5__text {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    transform: rotate(90deg);
+    font-size: 1.8rem;
+    color: white ;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+
 }
